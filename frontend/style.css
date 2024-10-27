@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.montserrat{
+    font-family: "Montserrat";
+    font-optical-sizing: auto;
+}
+.bg-image{
+    background-image: url("./assets/image.png");
+}
+.neon-shadow {
+    box-shadow: 
+    #baebff56 0 0 15px,
+    #3e9cb331 0 0 15px,
+    #06a6e54b 0 0 15px,
+    #000000 0 0 15px;
+}
+.textShadow{
+    text-shadow: 0 0 1px #000000;
+}

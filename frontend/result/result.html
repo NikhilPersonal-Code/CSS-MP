@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Result Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="flex justify-center relative items-center w-full flex-col gap-10">
+      <span class="absolute top-5 right-5">
+        <img src="../assets/printer.png" class="cursor-pointer" alt="print document" width="30" height="30" onclick="print()">
+      </span>
+      <h1
+        class="text-white montserrat bg-transparent font-bold text-center mt-16 text-4xl"
+        id="studName"
+      ></h1>
+      <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+        <table
+          class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
+        >
+          <thead
+            class="text-xs text-white uppercase bg-white transition-all duration-500 dark:bg-[#ffffff49]"
+          >
+            <tr>
+              <th scope="col" class="px-6 py-3">Subject</th>
+              <th scope="col" class="px-6 py-3">Theory</th>
+              <th scope="col" class="px-6 py-3">Practical</th>
+              <th scope="col" class="px-6 py-3">Total</th>
+            </tr>
+          </thead>
+          <tbody id="resultBody"></tbody>
+        </table>
+      </div>
+      <div class="w-full flex flex-col justify-center items-center pb-10">
+        <h1
+          class="text-4xl font-bold text-white textShadow"
+          id="percentage"
+        ></h1>
+      </div>
+    </div>
+    <div
+      class="fixed top-0 left-0 bg-[url(/assets/BG.png)] z-[-2] w-screen h-screen"
+    >
+      <img src="../assets/image.png" alt class="w-full h-full object-cover" />
+    </div>
+  </body>
+  <script src="resultScript.js"></script>
+</html>
